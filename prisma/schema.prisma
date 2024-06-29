@@ -14,6 +14,7 @@ model User {
   id         String  @id @default(uuid())
   username   String  @unique
   name       String
+  bio        String?
   email      String? @unique
   avatar_url String?
 
@@ -64,7 +65,7 @@ model Session {
 
 model UserTimeInterval {
   id                    String @id @default(uuid())
-  week_day               Int
+  week_day              Int
   time_start_in_minutes Int
   time_end_in_minutes   Int
 
