@@ -1,40 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignite Call
+
+Ignite Call is a web fullstack application designed to simplify and streamline scheduling and call management. This project leverages modern web technologies to provide an efficient and user-friendly experience.
+
+## Features
+
+- Schedule calls with ease
+- Manage appointments and notifications
+- User authentication and profile management
+- Responsive design for mobile and desktop
+- Integration with google calendar
+
+## Tech Stack
+
+- **Next.js**: A React framework for server-side rendering and static site generation
+- **TypeScript**: A strongly typed programming language that builds on JavaScript
+- **Prisma**: An ORM (Object-Relational Mapper) for database management
+- **Next-Auth**: Authentication for Next.js applications
+- **React Hook Form**: A library for managing form state in React
+- **Axios**: A promise-based HTTP client for making API requests
+- **ESLint**: A tool for identifying and fixing linting issues in code
+- **Prettier**: A code formatter to ensure consistent style
 
 ## Getting Started
 
-First, run the development server:
+To get started with Ignite Call, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone https://github.com/glendson/ignite-call.git
+    cd ignite-call
+    ```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    ```bash
+    npm install
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. **Run the development server:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    npm run dev
+    ```
 
-## Learn More
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/`: Contains the main source code for the application
+- `public/`: Contains static files such as images and icons
+- `prisma/`: Contains the database schema and migration files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Environment Variables
 
-## Deploy on Vercel
+To run this project, you will need to add the following environment variables to your `.env` file:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `DATABASE_URL`: URL of your database
+- `NEXTAUTH_URL`: URL for NextAuth.js
+- `NEXT_PUBLIC_API_URL`: URL for the API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/YourFeature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature/YourFeature`)
+6. Open a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- Thanks to the creators of Next.js, Prisma, NextAuth.js, and other libraries used in this project.
